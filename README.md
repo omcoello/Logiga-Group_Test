@@ -12,11 +12,11 @@ This project is a Student Grade Management System built with Flask.
 
 1. Clone the repository:
 
-    git clone https://github.com/tu_usuario/nombre_del_repositorio.git
+    git clone https://github.com/omcoello/Logiga-Group_Test.git
 
-2. Navigate to the project directory:
+2. Navigate to the project directory (follow this command in case you didn't specify a different directory repo name):
 
-    cd nombre_del_repositorio
+    cd Logiga-Group_Test
 
 3. Create and activate a virtual environment (optional but recommended):
 
@@ -57,6 +57,21 @@ Once you have completed the installation steps:
     flask run
 
 3. Access the application in your web browser at http://localhost:5000.
+
+=== Printing Student Grades ===
+
+The `results.py` file contains a Python function `print_students_grades()` that retrieves student grades from the API endpoint and prints them to the console. The function calls `get_students_grades()` to fetch the data and then iterates through the JSON result to print each student's grades, average grade, and result.
+
+To execute this code successfully, make sure to follow these steps:
+
+1. Ensure that the Flask server is running to provide the API endpoint.
+2. Execute the `results.py` file in your Python environment.
+3. The `print_students_grades()` function will then be called automatically, fetching the data from the API and printing it to the console.
+
+```python
+# Example usage to print student grades
+print_students_grades()
+
 
 
 === SQL queries solution ===
